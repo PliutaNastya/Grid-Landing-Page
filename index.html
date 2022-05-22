@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Landing Page</title>
+	<script>
+		document.addEventListener('DOMContentLoaded',()=>{
+		let menuBtn = document.querySelector('.header__burger');
+		let menu = document.querySelector('.header__list');
+		menuBtn.addEventListener('click', function(){
+			menuBtn.classList.toggle('active');
+			menu.classList.toggle('active');
+		})
+	})
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+		<header class="header">
+			<nav class="header__menu">
+				<ul class="header__list">
+					<li class="header__link header__link_active">
+						<a href="#">Home</a>
+					</li>
+					<li class="header__link">
+						<a href="#">Portfolio</a>
+					</li>
+					<li class="header__link">
+						<a href="#">About us</a>
+					</li>
+					<li class="header__link">
+						<a href="#" >Contact</a>
+					</li>
+				</ul>
+				<div class="header__burger">
+					<span></span>
+				</div>
+			</nav>
+			<div class="header__content">
+				<div class="header__text-block">
+					<h1 class="header__title">Our strong organization</h1>
+					<div class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem doloribus quidem fugit, vel hic sit vero eum velit inventore, ducimus, magnam dignissimos!</div>
+					<button class="header__button button">Contact us</button>
+				</div>
+				<div class="header__img">
+					<img src="assets/header__image.jpg" alt="Main photo">
+					<div class="header__icon icon"></div>
+				</div>
+			</div>
+		</header>
+		<main class="content">
+			<section class="we-can">
+				<div class="we-can__text-block">
+					<h2 class="we-can__title title">Do you know we can provide for you?</h2>
+					<p class="we-can__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus autem quo atque sequi voluptatibus tempore, ex nemo enim ducimus et! Voluptates eligendi nobis, alias minus itaque assumenda nemo esse.</p>
+					<button class="we-can__button button">Learn More</button>
+				</div>
+				<div class="we-can__column">
+					<div class="we-can__item">
+						<span class="we-can__logo icon icon_management"></span>
+						<h3 class="we-can__subtitle">Management</h3>
+						<div class="we-can__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi natus laboriosam mollitia corporis, deserunt aperiam ducimus ratione dolores quas.</div>
+					</div>
+					<div class="we-can__item">
+						<div class="we-can__logo icon icon_design"></div>
+						<h3 class="we-can__subtitle">UI/UX Design</h3>
+						<div class="we-can__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi natus laboriosam mollitia corporis, deserunt aperiam ducimus ratione dolores quas.</div>
+					</div>
+					<div class="we-can__item">
+						<div class="we-can__logo icon icon_logo"></div>
+						<h3 class="we-can__subtitle">Logo / Branding</h3>
+						<div class="we-can__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi natus laboriosam mollitia corporis, deserunt aperiam ducimus ratione dolores quas.</div>
+					</div>
+					<div class="we-can__item">
+						<div class="we-can__logo icon icon_animation"></div>
+						<h3 class="we-can__subtitle">Animation</h3>
+						<div class="we-can__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi natus laboriosam mollitia corporis, deserunt aperiam ducimus ratione dolores quas.</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__text-block">
+					<h2 class="products__title title">Feature products</h2>
+					<p class="products__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius animi tenetur quibusdam praesentium hic, quos voluptatum assumenda obcaecati eaque consequatur!</p>
+					<div class="products__line line"></div>
+				</div>
+				<ul class="products__menu">
+					<li class="products__item">
+						<a href="#" class="products__link products__link_active">All</a>
+					</li>
+					<li class="products__item">
+						<a href="#" class="products__link">Print template</a>
+					</li>
+					<li class="products__item">
+						<a href="#" class="products__link">Web template</a>
+					</li>
+					<li class="products__item">
+						<a href="#" class="products__link">User interface</a>
+					</li>
+					<li class="products__item">
+						<a href="#" class="products__link">Mock-up</a>
+					</li>
+				</ul>
+				<div class="products__grid">
+					<div class="products__img image">
+						<img src="assets/products__img-1.jpg" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-2.jpg" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-3.jpg" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-4.webp" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-5.png" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-6.webp" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-7.jpg" alt="Feature Products">
+					</div>
+					<div class="products__img image">
+						<img src="assets/products__img-8.webp" alt="Feature Products">
+					</div>
+				</div>
+			</section>
+			<section class="our-team">
+				<div class="our-team__text-block">
+					<h2 class="our-team__title title">Meet our team</h2>
+					<p class="our-team__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, doloremque libero expedita eos dolorem ipsam eveniet? Quisquam odio obcaecati quos.</p>
+					<div class="our-team__line line"></div>
+				</div>
+				<div class="our-team__grid">
+					<div class="our-team__photo image">
+						<img src="assets/our-team__img-1.jpg" alt="Our team">
+					</div>
+					<div class="our-team__description">
+						<h2 class="our-team__title title">Mark Waugh</h2>
+						<p class="our-team__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis corrupti vel, aspernatur laudantium eligendi libero quis eveniet voluptatibus. Ipsum.</p>
+						<div class="our-team__social">
+							<a href="#" target="_blank" class="our-team__link">Facebook</a>
+							<a href="#" target="_blank" class="our-team__link">Dribble</a>
+							<a href="#" target="_blank" class="our-team__link">Behance</a>
+							<a href="#" target="_blank" class="our-team__link">Twiter</a>
+						</div>
+						<div class="our-team__members">
+							<div class="our-team__member image">
+								<img src="assets/our-team__img-2.jpg" alt="Our team">
+								<div class="our-team__overlay">Sokina Jue</div>
+							</div>
+							<div class="our-team__member image">
+								<img src="assets/our-team__img-3.jpg" alt="Our team">
+								<div class="our-team__overlay">Sokina Jue</div>
+							</div>
+							<div class="our-team__member image">
+								<img src="assets/our-team__img-4.jpg" alt="Our team">
+								<div class="our-team__overlay">Sokina Jue</div>
+							</div>
+							<div class="our-team__member image">
+								<img src="assets/our-team__img-5.png" alt="Our team">
+								<div class="our-team__overlay">Sokina Jue</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__text-block">
+						<h2 class="subscribe__title title">Design tips, tricks, and freebies. Delivered weekly.</h2>
+						<p class="subscribe__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+						</p>
+					</div>
+					<form class="subscribe__form">
+						<input type="email" class="subscribe__input" placeholder="Email Address...">
+						<input type="submit" class="subscribe__button button" value="Subscribe">
+					</form>
+				</div>
+			</section>
+			<section class="get-in-touch">
+					<div class="get-in-touch__text-block">
+						<h2 class="get-in-touch__title title">Get in touch</h2>
+						<p class="get-in-touch__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, doloremque libero expedita eos dolorem ipsam eveniet? Quisquam odio obcaecati quos. 
+						</p>
+						<div class="get-in-touch__line line"></div>
+					</div>
+					<form action="#" class="get-in-touch__form">
+						<div class="get-in-touch__form-row">
+							<input type="text" placeholder="Name" class="get-in-touch__input">
+							<input type="email" placeholder="Your email" class="get-in-touch__input">
+						</div>
+						<textarea placeholder="Type your message" class="get-in-touch__textarea"></textarea>
+						<input type="submit" value="Send Message" class="get-in-touch__button button">
+					</form>
+				<div class="get-in-touch__contact-info">
+					<div class="get-in-touch__contact">
+						<h5 class="get-in-touch__name">Contact Info</h5>
+						<p class="get-in-touch__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+						<a href="mailto:redwan@deviserweb.com" class="get-in-touch__link">redwan@deviserweb.com</a>
+						<a href="tel:+8801761746373" class="get-in-touch__link">+(88) 017 617 46373</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copy">
+					&#169; Copyright &#64; Junaed 2016, All rights reserved.
+				</div>
+				<div class="footer__social">
+					<a href="#" target="_blank" class="footer__link">
+						<span class="footer__icon icon icon_twiter"></span>
+					</a>
+					<a href="#" target="_blank" class="footer__link">
+						<span class="footer__icon icon icon_linkedin"></span>
+					</a>
+					<a href="#" target="_blank" class="footer__link">
+						<span class="footer__icon icon icon_google"></span>
+					</a>
+					<a href="#" target="_blank" class="footer__link">
+						<span class="footer__icon icon icon_fb"></span>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
